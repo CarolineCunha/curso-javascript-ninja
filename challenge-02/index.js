@@ -18,3 +18,10 @@ function add_valor() {
 }
 var add_valor = add_valor()
 console.log(add_valor)
+
+function newFunction(a,b,c){
+    if(a === undefined || b === undefined || c === undefined) {
+        return 'Preencha todos os valores corretamente!'
+    }
+    return (a * b * c) + 2;
+}
