@@ -1,0 +1,8 @@
+{
+  "name": "curso-javascript-ninja",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/CarolineCunha/curso-javascript-ninja.git",
+  "author": "<caroline.cunha.b@hotmail.com>",
+  "license": "MIT"
+}

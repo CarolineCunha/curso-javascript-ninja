@@ -25,3 +25,31 @@ function newFunction(a,b,c){
     }
     return (a * b * c) + 2;
 }
+
+function solution(N) {
+    let binaryValue = (N >>> 0).toString(2);
+    console.log(binaryValue)
+    console.log("numero "+ N)
+    let lengthArr = [];
+    let length = 1;
+  
+    for(let i = 0; i < binaryValue.length; i++){
+        console.log("tamanho "+ length)
+      if(binaryValue[i] == 0){
+        if(binaryValue[i + 1] == 1){
+          console.log(lengthArr)
+          lengthArr.push(length);
+          console.log(length)
+          length = 0;
+        }
+  
+        length++;
+      }
+    }
+    console.log("lengthArr " + lengthArr)
+    return lengthArr.length ? Math.max(...lengthArr) : 0;
+  
+  }
+
+  var teste = solution(1041)
+  console.log(teste)
