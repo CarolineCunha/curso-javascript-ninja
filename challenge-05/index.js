@@ -32,3 +32,9 @@ function book(bookName) {
 
     return !bookName ? allBooks : allBooks[bookName]
 }
+var teste = [1, 2]
+console.log({
+    "teste": teste[0]
+})
+
+console.log(!!0)
