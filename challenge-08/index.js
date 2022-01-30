@@ -13,3 +13,35 @@ function showName(){
 
 var varShowName = showName;
 console.log('A função '+ varShowName.name + ' retorna ' + varShowName())
+
+function calculator(operator){
+    var result
+    switch (operator) {
+        case '+':
+            result = number1 + number2
+            break;
+        case '-':
+            result = number1 - number2
+            break;
+        case '*':
+            result = number1 * number2
+            break;
+        case '/':
+            result = number1 / number2
+            break;
+        case '%':
+            result = number1 % number2
+            break;
+        default:
+            return 'Operação inválida'
+    }
+    return function(number1, number2){
+        return 'Resultado da operação: '+ number1 + ' ' + operator + ' ' + number2 + ' = ' + result
+    }
+}
+
+var sum  = calculator('+');
+var multiplication = calculator('*');
+var division = calculator('/');
+var subtraction = calculator('-');
+var mod = calculator('%');
