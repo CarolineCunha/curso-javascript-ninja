@@ -16,6 +16,8 @@ console.log('A função '+ varShowName.name + ' retorna ' + varShowName())
 
 function calculator(operator){
     var result
+    var number1
+    var number2
     switch (operator) {
         case '+':
             result = number1 + number2
