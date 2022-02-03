@@ -11,3 +11,8 @@ var operation = {
     '/': function(x,y){return x / y},
     '%': function(x,y){return x % y}
 }
+
+function isOperatorValid(operator){
+     return !!operation[operator] !== undefined
+}
+console.log(isOperatorValid('+'))
