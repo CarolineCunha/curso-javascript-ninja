@@ -16,3 +16,23 @@ function isOperatorValid(operator){
      return !!operation[operator] !== undefined
 }
 console.log(isOperatorValid('+'))
+
+function calculator(operator){
+    if(!isOperatorValid(operator)){
+        return false
+    }
+    return function(x, y){
+        if(typeof x !== 'number'  || typeof y =='number' ){
+            return false
+        }
+        return operation[operator](x, y)
+    }
+}
+
+function showOperationMessage(operator, number1, number2){
+    return 'A operação ' + operator + ' para '+ number1 + ' ' + number2 + " = "
+}
+
+function showErrorMessage(operator){
+    return 'Operação ' + operator + ' não permitida'
+}
