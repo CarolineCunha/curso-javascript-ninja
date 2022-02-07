@@ -22,4 +22,22 @@
     function moreThan(age){
        return person.age > age
     }
+
+    var numbers =[]
+    for(var i = 0; i < 20; i++){
+        if(i > 10){
+            break;
+        }
+        numbers.push(i)
+    }
+    console.log(numbers)
+
+    numbers = []
+    for (var i = 0; i <= 20; i++){
+        if(i % 2 === 0){
+            continue
+        }
+        numbers.push(i)
+    }
+    console.log(numbers)
 })()
