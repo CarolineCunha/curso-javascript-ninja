@@ -15,4 +15,16 @@ var lastBook = books.pop()
 console.log(lastBook)
 books = JSON.stringify(books)
 console.log(books)
+books = JSON.parse(books)
+
+for(var i = 0; i < books.length; i++){
+    for(var prop in books[i]){
+        console.log(prop + ' : ' + books[i][prop])
+    }
+}
+
+var myName = ['C','a','r','o','l']
+console.log('Meu nome é: ', myName.join(''))
+console.log(myName.reverse().join(''))
+console.log(myName.sort())
 })()
