@@ -17,4 +17,14 @@
         return acumulado + separator + atual;
     }).concat(' são meus amigos')
     console.log(phrase)
-})()
+
+    console.log('Roberto'.replace('to','ta'));
+    console.log('Fernando'.substring(8,3));
+
+    var myName = 'Caroline';
+    var myNewName = [];
+    for(var i = 0; i < myName.length; i++){
+        myNewName.push( i % 2 === 0 ? myName[i].toLowerCase() : myName[i].toUpperCase());
+    }
+    console.log(myNewName.join(''));
+})();
