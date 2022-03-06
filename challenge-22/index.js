@@ -18,4 +18,11 @@
     };
     console.log(sum(1,2,3));
     console.log(sum(2,8,9,7,5));
+
+    function justNumbers(entry){
+        entry.replace(/\D+/g,',').split(',');
+    };
+    console.log(justNumbers('10abc1dafdg'));
+
+    
 })();
